@@ -1,1 +1,1 @@
-# Rust
+# VBI RUST WORKSHOP
