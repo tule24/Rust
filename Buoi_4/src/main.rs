@@ -22,6 +22,26 @@ pub fn baitap() {
     println!("{:?}", input);
 }
 
+pub fn baitap() {
+    let input: Vec<String>;
+    loop {
+        let mut input_text = String::new();
+        println!("Type instruction in the format Add <name> to <department>:");
+        io::stdin()
+            .read_line(&mut input_text)
+            .expect("failed to read from stdin");
+        trimmed_text = input_text.trim().to_string();
+        let temp:Vec<&str> = trimmed_text.split(" ").map(String::from).collect();
+        if temp[0] == "Add" && temp[2] == "to" {
+            input = trimmed_text.split(" ").collect();
+            break;
+        } else {
+            println!("Invalid format.");
+        }
+    }
+    println!("{:?}", input);
+}
+
 /////////////////////////////////////
 // Bài 2
 // Implement trait
