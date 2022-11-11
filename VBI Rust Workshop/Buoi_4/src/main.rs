@@ -1,7 +1,7 @@
 // Bài 1
 // Sửa code để compile thành công liên quan tới vấn đề lifetime
 use std::io;
-pub fn baitap() {
+pub fn main() {
     let input: Vec<&str>;
     let mut trimmed_text = String::new();
     loop {
