@@ -1,6 +1,4 @@
-mod hello_world;
-mod lucian_luscious_lasagna;
-use crate::hello_world::hello_world::*;
-use crate::lucian_luscious_lasagna::lucian_luscious_lasagna::*;
+mod series;
+use crate::series::series::*;
 fn main() {
 }
